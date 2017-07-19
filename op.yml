@@ -1,4 +1,4 @@
-name: base64url.decode
+name: github.com/opspec-pkgs/base64url.decode
 description: decodes a base 64 URL encoded string per RFC4648
 inputs:
   encodedValue:
