@@ -1,34 +1,36 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/base64url.decode.svg?branch=master)](https://travis-ci.org/opspec-pkgs/base64url.decode)
 
+
 # Problem statement
 
 decodes a base 64 URL encoded string per RFC4648
 
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
+
 # Example usage
 
-> note: in examples, VERSION represents a version of the
-> base64url.decode pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/base64url.decode#VERSION
+opctl pkg install github.com/opspec-pkgs/base64url.decode#1.0.1
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/base64url.decode#VERSION
+opctl run github.com/opspec-pkgs/base64url.decode#1.0.1
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/base64url.decode#VERSION }
-  inputs:
+pkg: { ref: github.com/opspec-pkgs/base64url.decode#1.0.1 }
+inputs:
     encodedValue:
-  outputs:
+outputs:
     decodedValue:
 ```
 
